@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arno</title>
+
+    <link rel="stylesheet" href="./page-arno.css" />
+  </head>
+
+  <body>
+    <nav class="top-nav-bar">
+      <div class="top-nav-bar-item">Home</div>
+      <a href="./page-arno.html" class="top-nav-bar-item this-page"
+        >About Arno</a
+      >
+      <div class="top-nav-bar-item">About Kevin</div>
+      <div class="top-nav-bar-item">About Earlson</div>
+    </nav>
+
+    <main id="mySidenav" class="side-nav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div>To be added</div>
+      <div>To be added</div>
+      <div>To be added</div>
+      <div>To be added</div>
+    </main>
+
+    <div id="main">
+      <span class="side-nav-icon" onclick="openNav()">&#9776;</span>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+      }
+    </script>
+  </body>
+</html>
